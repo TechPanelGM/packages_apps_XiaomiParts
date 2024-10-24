@@ -18,22 +18,22 @@ public class Constants {
 
     /* DC Dimming */
     public static final String KEY_DC_DIMMING = "pref_dc_dimming";
-    public static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display/anti_flicker";
+    public static final String DC_DIMMING_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable";
 
     /* KProfiles */
     public static final String KEY_KPROFILES_AUTO = "pref_kprofiles_auto";
-    public static final String KPROFILES_AUTO_NODE = "/sys/module/kprofiles/parameters/auto_kp";
+    public static final String KPROFILES_AUTO_NODE = "";
     public static final String KEY_KPROFILES_MODES = "pref_kprofiles_modes";
-    public static final String KPROFILES_MODES_NODE = "/sys/kernel/kprofiles/kp_mode";
+    public static final String KPROFILES_MODES_NODE = "";
     public static final String KPROFILES_MODES_INFO = "pref_kprofiles_modes_info";
 
     /* Audio amplification */ 
     public static final String KEY_HEADPHONE_GAIN = "headphone_gain";
-    public static final String HEADPHONE_GAIN_NODE = "/sys/kernel/sound_control/headphone_gain";
+    public static final String HEADPHONE_GAIN_NODE = "";
     public static final String KEY_MICROPHONE_GAIN = "microphone_gain";
-    public static final String MICROPHONE_GAIN_NODE = "/sys/kernel/sound_control/mic_gain";
+    public static final String MICROPHONE_GAIN_NODE = "";
     public static final String KEY_SPEAKER_GAIN = "speaker_gain";
-    public static final String SPEAKER_GAIN_NODE = "/sys/kernel/sound_control/speaker_gain";
+    public static final String SPEAKER_GAIN_NODE = "";
     
     /* Mi Sound Enhancer */
     public static final String KEY_DIRAC_HEADSET = "dirac_headset_pref";
@@ -47,7 +47,7 @@ public class Constants {
     public static final int DIRACSOUND_PARAM_MUSIC = 4;
     public static final int DIRACSOUND_PARAM_SCENE = 15;
     public static final int DIRACSOUND_PARAM_HIFI = 8;
-
+w
     public static final UUID EFFECT_TYPE_DIRACSOUND =
             UUID.fromString("5b8e36a5-144a-4c38-b1d7-0002a5d5c51b");
     
@@ -60,11 +60,11 @@ public class Constants {
 
     /* FPS Counter */
     public static final String KEY_FPS_INFO = "fps_info";
-    public static final String MEASURED_FPS_NODE = "/sys/class/drm/card0/sde-crtc-0/measured_fps";
+    public static final String MEASURED_FPS_NODE = "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps";
     
     /* Haptic Level Settings */
     public final static String KEY_HAPTIC_LEVEL = "haptic_level_pref";
-    public final static String HAPTIC_LEVEL_NODE = "/sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/ulevel";
+    public final static String HAPTIC_LEVEL_NODE = "";
 
     public final static int HAPTIC_MIN_LEVEL = 1;
     public final static int HAPTIC_MAX_LEVEL = 128;
@@ -134,22 +134,22 @@ public class Constants {
     public static final String KEY_KCAL_SATURATION = "saturation_slider";
     public static final String KEY_KCAL_CONTRAST = "contrast_slider";
 
-    public static final String KCAL_ENABLE_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_enable";
-    public static final String KCAL_RGB_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal";
-    public static final String KCAL_SATURATION_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_sat";
-    public static final String KCAL_CONTRAST_NODE = "/sys/devices/platform/kcal_ctrl.0/kcal_cont";
+    public static final String KCAL_ENABLE_NODE = "/sys/module/msm_drm/parameters/dsi_display1";
+    public static final String KCAL_RGB_NODE = "/sys/module/msm_drm/parameters/kcal_hue";
+    public static final String KCAL_SATURATION_NODE = "/sys/module/msm_drm/parameters/kcal_sat"";
+    public static final String KCAL_CONTRAST_NODE = "/sys/module/msm_drm/parameters/kcal_cont"";
 
     /* Hight Brightness Mode */
     public static final String KEY_HBM_SWITCH = "pref_hbm";
     public static final String KEY_AUTO_HBM_SWITCH = "pref_auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "pref_auto_hbm_threshold";
     public static final int DELAY_MILLIS = 7000; // 7 seconds
-    public static final String HBM_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display/hbm";
+    public static final String HBM_NODE = "/sys/class/drm/card0/card0-DSI-1/hbm";
     public static final String BACKLIGHT_NODE = "/sys/class/backlight/panel0-backlight/brightness";
 
     /* USB fastcharge */
     public static final String KEY_USB_FASTCHARGE = "pref_usb_charge";
-    public static final String USB_FASTCHARGE_NODE = "/sys/kernel/fast_charge/force_fast_charge";
+    public static final String USB_FASTCHARGE_NODE = "";
 
     /* Tile Entry Activity */
     public static final String DIRAC_TILE = "org.lineageos.settings.device.dirac.DiracTileService";
